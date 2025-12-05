@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance Management Portal</title>
+
+  <!-- Internal CSS -->
+  <style>
+    /* General Page Setup */
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #440000; /* Ashesi wine */
+      font-family: "Times New Roman", Times, serif;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Logo positioned top-right */
+    .logo {
+      width: 120px;
+      position: absolute;
+      top: 25px;
+      right: 40px;
+    }
+
+    /* Main content area */
+    .content {
+      text-align: center;
+      margin-top: 120px;
+      flex: 1;
+    }
+
+    /* Headings */
+    h2 {
+      font-size: 36px;
+      letter-spacing: 2px;
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      font-size: 24px;
+      font-weight: normal;
+      margin-bottom: 20px;
+    }
+
+    h4 {
+      font-size: 18px;
+      font-weight: normal;
+      line-height: 1.7;
+      color: #f5f5f5;
+      margin: 0 auto 50px auto;
+      width: 75%;
+    }
+
+    /* Buttons */
+    #login-btn,
+    #signup-btn {
+      background-color: white;
+      color: #660000;
+      border: none;
+      padding: 14px 40px;
+      margin: 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 17px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      letter-spacing: 0.5px;
+    }
+
+    #login-btn:hover,
+    #signup-btn:hover {
+      background-color: #440000;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    /* Footer full width */
+    footer {
+      background-color: #440000;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      margin-top: auto;
+    }
+
+    /* Responsive layout */
+    @media (max-width: 600px) {
+      .logo {
+        width: 90px;
+        top: 15px;
+        right: 20px;
+      }
+
+      h2 {
+        font-size: 26px;
+      }
+
+      h3 {
+        font-size: 20px;
+      }
+
+      h4 {
+        width: 90%;
+        font-size: 16px;
+      }
+
+      #login-btn,
+      #signup-btn {
+        width: 80%;
+        padding: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Logo at top right -->
+  <img src="ashesilogo.png" alt="Ashesi University Logo" class="logo">
+
+  <!-- Main Intro Content -->
+  <div class="content">
+    <h2>ATTENDANCE PORTAL</h2>
+    <h3 id="welcome-title">Welcome To The Ashesi Attendance Management Portal</h3>
+    <h4 id="intro-description">
+      This portal provides a streamlined solution for tracking attendance, managing sessions,
+      and generating detailed reports for faculty, faculty interns, and students.
+    </h4>
+
+    <a href="Login.php"><input type="button" id="login-btn" value="LOG IN"></a>
+    <a href="signup.php"><input type="button" id="signup-btn" value="SIGN UP"></a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Ashesi University | Attendance Management System</p>
+  </footer>
+</body>
+</html>
