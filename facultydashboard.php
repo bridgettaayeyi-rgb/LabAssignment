@@ -172,22 +172,12 @@ $faculty_id = $_SESSION['user_id'];
   <nav>
     <ul>
       <li><a href="course_management.php">Course Management</a></li>
-      <li><a href="#session-overview">Session Overview</a></li>
+      <li><a href="session_overview.php">Session Overview</a></li>
       <li><a href="#attendance-reports">Attendance Reports</a></li>
       <li><a href="#student-performance">Student Performance</a></li>
       <li><a href="logout.php">Log Out</a></li>
     </ul>
   </nav>
-
-  <section id="session-overview">
-    <h3>Session Overview</h3>
-    <p>Monitor current and past sessions for your courses.</p>
-    <ul>
-      <li><a href="session.php">Start New Session</a></li>
-      <li><a href="#current session">View Ongoing Sessions</a></li>
-      <li><a href="#endsession">End Session</a></li>
-    </ul>
-  </section>
   <section id="attendance-reports">
     <h3>Attendance Reports</h3>
     <p>Generate, view, and export attendance data for your sessions.</p>
@@ -207,59 +197,6 @@ $faculty_id = $_SESSION['user_id'];
     </ul>
     
   </section>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script>
-// Load pending requests
-async function fetchRequests() {
-    const res = await fetch('fetch_requests.php');
-    const data = await res.json();
-    const tbody = document.getElementById('requestsTableBody');
-    tbody.innerHTML = '';
-    data.forEach(req => {
-        const row = document.createElement('tr');
-        row.innerHTML = `
-            <td>${req.request_id}</td>
-            <td>${req.course_name}</td>
-            <td>${req.student_id}</td>
-            <td>${req.requested_at}</td>
-            <td>
-                <button onclick="processRequest(${req.request_id}, 'approve')">Approve</button>
-                <button onclick="processRequest(${req.request_id}, 'reject')">Reject</button>
-            </td>
-        `;
-        tbody.appendChild(row);
-    });
-}
-
-// Approve or reject requests
-async function processRequest(requestId, action){
-    const res = await fetch(`process_request.php?request_id=${requestId}&action=${action}`);
-    const result = await res.json();
-    if(result.success){
-        Swal.fire('Success','Request processed','success');
-        fetchRequests(); // Refresh table
-    } else {
-        Swal.fire('Error', result.message, 'error');
-    }
-}
-
-// Create course
-document.getElementById('createCourseForm').addEventListener('submit', async function(e){
-    e.preventDefault();
-    const formData = new FormData(this);
-    const res = await fetch('create_course.php', {method:'POST', body:formData});
-    const result = await res.json();
-    if(result.success){
-        Swal.fire('Success', result.message, 'success');
-    } else {
-        Swal.fire('Error', result.message, 'error');
-    }
-});
-
-// Initial load
-fetchRequests();
-</script>
-
 
   <!-- Footer -->
   <footer>

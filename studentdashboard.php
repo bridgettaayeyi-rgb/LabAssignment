@@ -185,6 +185,7 @@ $student_id = $_SESSION['user_id'];
          <p>Check your class schedule and upcoming sessions.</p>
          <ul>
              <li><a href="#view-schedule">View Weekly Schedule</a></li>
+             <li><a href="mark_attendance.php">Mark Attendance</a></li>
              <li><a href="#upcoming-sessions">Upcoming Sessions</a></li>
          </ul>
      </section>

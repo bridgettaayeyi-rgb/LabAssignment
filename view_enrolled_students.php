@@ -132,7 +132,7 @@ async function processRequest(id, action) {
 loadStudents(); // Load on page start
 </script>
 <button onclick="window.location.href='facultydashboard.php';">
-    ← Back to Dashboard
+    Back to Dashboard
 </button>
 </body>
 </html>

@@ -53,7 +53,7 @@ switch ($user['role']) {
     case 'student': $redirect = "studentdashboard.php"; break;
     case 'faculty': $redirect = "facultydashboard.php"; break;
     case 'intern': $redirect = "interndashboard.php"; break;
-    default: $redirect = "login.php"; break;
+    default: $redirect = "Login.php"; break;
 }
 
 // Return JSON response
