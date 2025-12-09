@@ -42,7 +42,7 @@ while ($row = $result->fetch_assoc()) {
 }
 
 echo "</tbody></table>";
-
+echo "<a href='studentdashboard.php'>Back</a>";
 $stmt->close();
 $conn->close();
 ?>

@@ -78,6 +78,16 @@ select {
     cursor: pointer;
     transition: border 0.2s ease;
 }
+.button {
+    background-color: #660000;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+    }
 
 select:focus {
     border-color: #3498db;
@@ -146,10 +156,6 @@ select:focus {
 
 <button type="submit">Save Attendance</button>
 </form>
-<a href="facultydashboard.php">
-    <button>Back</button>
-</a>
-
-
+<a href="facultydashboard.php" class="button">Back to Dashboard</a>
 </body>
 </html>

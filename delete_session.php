@@ -59,6 +59,17 @@ $result = $stmt->get_result();
     margin-top: 10px;
 }
 
+.button {
+    background-color: #660000;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
 .delete-btn {
     background-color: #660000;
     color: #fff;
@@ -93,6 +104,7 @@ $result = $stmt->get_result();
             </a>
         </div>
     </div>
+    <a href="facultydashboard.php" class="button">Back to Dashboard</a>
 <?php endwhile; ?>
 
 </div>

@@ -60,6 +60,7 @@
     <input type="text" name="course_code" id="course_code" placeholder="Course Code" required>
     <textarea name="description" id="description" placeholder="Description (optional)"></textarea>
     <button type="submit">Create Course</button>
+    <a href="facultydashboard.php" class="button">Back to Dashboard</a>
 </form>
 
 <script>

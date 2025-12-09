@@ -63,6 +63,16 @@ $result = $stmt->get_result();
     transform: translateY(-5px);
     box-shadow: 0 6px 18px rgba(0,0,0,0.4);
 }
+.button {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: #440000;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+}
 .manage-btn {
     display: inline-block;
     padding: 10px 18px;
@@ -98,6 +108,7 @@ $result = $stmt->get_result();
         <p><strong>Location:</strong> <?= htmlspecialchars($row['location']) ?></p>
         <a href="attendance_action.php?session_id=<?= $row['session_id'] ?>" 
            class="manage-btn">Manage Attendance</a>
+        <a href="facultydashboard.php" class="button">Back to Dashboard</a>
     </div>
 <?php endwhile; ?>
 

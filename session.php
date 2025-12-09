@@ -72,7 +72,7 @@ $courses = $conn->query("SELECT course_id, course_name FROM courses WHERE facult
     <input type="time" name="end_time" id="end_time" required>
     <button type="submit">Create Session</button>
 </form>
-
+<a href="facultydashboard.php" class="button">Back to Dashboard</a>
 <script>
 document.getElementById("createSessionForm").addEventListener("submit", async function(e) {
     e.preventDefault();

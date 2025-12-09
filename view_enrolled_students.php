@@ -79,7 +79,7 @@ require "auth_check.php";
     <tbody></tbody>
 </table>
 
-
+<a href="facultydashboard.php" class="button">Back to Dashboard</a>
 <script>
 async function loadStudents() {
     let res = await fetch("fetch_enrolled_students.php");

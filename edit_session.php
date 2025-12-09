@@ -30,6 +30,13 @@ $result = $stmt->get_result();
     gap: 20px;
     padding: 20px;
 }
+.button {
+            background: #440000;
+            color: white;
+            padding: 7px 12px;
+            border-radius: 6px;
+            text-decoration: none;
+        }
 
 .session-card {
     background: #1e1e1e; /* Dark mode friendly */
@@ -92,6 +99,7 @@ $result = $stmt->get_result();
             </a>
         </div>
     </div>
+    <a href="facultydashboard.php" class="button">Back to Dashboard</a>
 <?php endwhile; ?>
 
 </div>

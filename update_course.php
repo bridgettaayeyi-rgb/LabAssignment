@@ -80,7 +80,7 @@ $stmt->close();
     <label>Course Name:</label>
     <input type="text" name="course_name" value="<?php echo htmlspecialchars($course['course_name']); ?>" required>
 
-```
+
 <label>Course Code:</label>
 <input type="text" name="course_code" value="<?php echo htmlspecialchars($course['course_code']); ?>" required>
 
@@ -96,7 +96,7 @@ $stmt->close();
 </form>
 
 <?php if ($update_success): ?>
-
+<a href="facultydashboard.php" class="button">Back to Dashboard</a>
 <script>
     alert("Course updated successfully!");
     window.location.href = "<?php echo $redirect; ?>";

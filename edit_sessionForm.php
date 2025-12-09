@@ -25,7 +25,29 @@ $session = $result->fetch_assoc();
 ?>
 <!DOCTYPE html>
 <html>
-<head><title>Edit Session</title></head>
+<head>
+    <title>Edit Session</title>
+    <style>
+        body { 
+            font-family: Arial; padding: 20px; 
+        }
+        input, textarea { 
+            width: 100%; padding: 10px; margin: 8px 0; border-radius: 6px; border: 1px solid #ccc; 
+        }
+        button { 
+            padding: 10px 15px; border: none; border-radius: 6px; background: #440000; color: white; cursor: pointer; 
+        }
+        button:hover {
+             background: #660000; 
+            }
+        .error { 
+            margin: 10px 0; color: red; 
+        }
+        label {
+             font-weight: bold; 
+            }
+    </style>
+</head>
 <body>
 
 <h2>Edit Session for <?= htmlspecialchars($session['course_name']) ?></h2>
@@ -44,6 +66,6 @@ $session = $result->fetch_assoc();
     <input type="time" name="end_time" value="<?= $session['end_time'] ?>" required>
     <button type="submit">Update Session</button>
 </form>
-
+<a href="facultydashboard.php" class="button">Back to Dashboard</a>
 </body>
 </html>

@@ -18,6 +18,13 @@ $result = $stmt->get_result();
         table { width: 70%; border-collapse: collapse; margin-top: 20px; }
         th, td { padding: 10px; border: 1px solid #ccc; text-align: left; }
         th { background: #440000; color: white; }
+        .button {
+            background: #440000;
+            color: white;
+            padding: 7px 12px;
+            border-radius: 6px;
+            text-decoration: none;
+        }
         a.edit-btn {
             background: #440000;
             color: white;
@@ -51,6 +58,7 @@ $result = $stmt->get_result();
     </tr>
     <?php } ?>
 </table>
+<a href="facultydashboard.php" class="button">Back to Dashboard</a>
 <?php endif; ?>
 
 </body>

@@ -45,6 +45,17 @@ require "auth_check.php";
             color: #333333;
             flex-grow: 1;
         }
+        .button {
+            background-color: #660000;
+            color: #fff;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.2s ease;
+        }
+             
         .course-card a {
             padding: 10px;
             background: #440000;
@@ -68,6 +79,7 @@ require "auth_check.php";
 <h2>My Courses</h2>
 <div id="courses" class="course-container"></div>
 <div id="no-courses" class="no-courses" style="display:none;">No courses found.</div>
+<a href="facultydashboard.php" class="button">Back to Dashboard</a>
 
 <script>
 async function loadCourses() {

@@ -41,6 +41,16 @@
         tr:hover {
             background: #f1e6ff;
         }
+        
+        button {
+            padding: 8px 12px;
+            background: #d90429;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
 
         button.deleteBtn {
             padding: 8px 12px;
@@ -82,7 +92,7 @@
 </table>
 
 <p id="response"></p>
-
+<a href="facultydashboard.php" class="button">Back to Dashboard</a>
 <script>
 async function loadCourses() {
     let res = await fetch('courses_faculty.php'); 

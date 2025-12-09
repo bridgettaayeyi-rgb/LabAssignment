@@ -124,6 +124,6 @@
         </div>
     
     </div>
-    
+    <a href="facultydashboard.php" class="button">Back to Dashboard</a>
 </body>
 </html>

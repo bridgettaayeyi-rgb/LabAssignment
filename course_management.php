@@ -90,6 +90,7 @@ require "db_connect.php";
     <li><a href="delete_course.html">Delete Course</a></li>
     <li><a href="view_enrolled_students.php">Pending Student Requests</a></li>
     <li><a href="list_courses.php">View Courses</a></li>
+    <li><a href="facultydashboard.php">Back to Dashboard</a></li>
 </ul>
 
 </body>

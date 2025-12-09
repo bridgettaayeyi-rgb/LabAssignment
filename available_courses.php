@@ -103,7 +103,7 @@ $result = $stmt->get_result();
     <?php endwhile; ?>
 </div>
 
-
+<a href="studentdashboard.php" class="button">Back to Dashboard</a>
 <?php endif; ?>
 
 <script>

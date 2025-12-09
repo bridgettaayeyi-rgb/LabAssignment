@@ -89,6 +89,7 @@ require "db_connect.php";
     <li><a href="edit_session.php">Edit Sessions</a></li>
     <li><a href="delete_session.php">Delete Session</a></li>
     <li><a href="view_session.php">View Upcoming Sessions</a></li>
+    <li><a href="facultydashboard.php">Back to Dashboard</a></li>
 </ul>
 
 </body>

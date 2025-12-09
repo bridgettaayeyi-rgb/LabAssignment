@@ -127,6 +127,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <input type="text" name="code" placeholder="Enter Code" required>
     <button type="submit">Submit</button>
 </form>
-
+<a href="studentdashboard.php" class="button">Back to Dashboard</a>
 </body>
 </html>
